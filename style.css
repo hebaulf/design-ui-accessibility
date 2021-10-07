@@ -1,0 +1,102 @@
+.visuallyhidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Base styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkseagreen;
+}
+
+main {
+  flex: 1;
+  background-color: bisque;
+  padding: 40px;
+}
+
+section {
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+/* List styles */
+ul,
+li {
+  padding: 0;
+}
+
+/* Navigation styles */
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: brown;
+}
+
+nav ul .has-subnav ul {
+  display: none;
+  position: relative;
+}
+
+nav ul .has-subnav.open ul {
+  display: block;
+
+  position: absolute;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+}
+
+caption {
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  height: 200px;
+  background-color: darkgray;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: space-between;
+}
